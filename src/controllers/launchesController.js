@@ -9,4 +9,13 @@ const getNextLaunch = async (_req, res, next) => {
   }
 };
 
-module.exports = { getNextLaunch };
+const getLatestLaunch = async (_req, res, next) => {
+  try {
+    const nextLaunch = await launchesService.getLatestLaunch();
+    return res.status(200).json(nextLaunch);
+  } catch (err) {
+    next(err);
+  }
+};
+
+module.exports = { getNextLaunch, getLatestLaunch };

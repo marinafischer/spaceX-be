@@ -5,4 +5,9 @@ const getNextLaunch = async () => {
   return nextLaunch;
 };
 
-module.exports = { getNextLaunch };
+const getLatestLaunch = async () => {
+  const latestLaunch = await getLaunches('latest');
+  return latestLaunch;
+};
+
+module.exports = { getNextLaunch, getLatestLaunch };

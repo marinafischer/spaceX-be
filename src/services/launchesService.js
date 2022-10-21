@@ -14,4 +14,18 @@ const getNextLaunch = async () => {
   return response;
 };
 
-module.exports = { getNextLaunch };
+const getLatestLaunch = async () => {
+  const {
+    name, date_utc: date, id, rocket, links,
+  } = await launchesModel.getLatestLaunch();
+  const response = {
+    id,
+    name,
+    rocket,
+    date,
+    image: links.patch.small,
+  };
+  return response;
+};
+
+module.exports = { getNextLaunch, getLatestLaunch };
