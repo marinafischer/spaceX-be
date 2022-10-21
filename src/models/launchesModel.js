@@ -10,4 +10,9 @@ const getLatestLaunch = async () => {
   return latestLaunch;
 };
 
-module.exports = { getNextLaunch, getLatestLaunch };
+const getUpcomingLaunches = async () => {
+  const latestLaunch = await getLaunches('upcoming');
+  return latestLaunch;
+};
+
+module.exports = { getNextLaunch, getLatestLaunch, getUpcomingLaunches };
