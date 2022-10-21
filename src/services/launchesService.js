@@ -41,4 +41,19 @@ const getUpcomingLaunches = async () => {
   return response;
 };
 
-module.exports = { getNextLaunch, getLatestLaunch, getUpcomingLaunches };
+const getPastLaunches = async () => {
+  const data = await launchesModel.getPastLaunches();
+  const response = data.map((element) => ({
+    id: element.id,
+    name: element.name,
+    rocket: element.rocket,
+    date: element.date_utc,
+    image: element.links.patch.small,
+  }));
+
+  return response;
+};
+
+module.exports = {
+  getNextLaunch, getLatestLaunch, getUpcomingLaunches, getPastLaunches,
+};

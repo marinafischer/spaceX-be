@@ -27,4 +27,15 @@ const getUpcomingLaunches = async (_req, res, next) => {
   }
 };
 
-module.exports = { getNextLaunch, getLatestLaunch, getUpcomingLaunches };
+const getPastLaunches = async (_req, res, next) => {
+  try {
+    const nextLaunch = await launchesService.getPastLaunches();
+    return res.status(200).json(nextLaunch);
+  } catch (err) {
+    next(err);
+  }
+};
+
+module.exports = {
+  getNextLaunch, getLatestLaunch, getUpcomingLaunches, getPastLaunches,
+};
