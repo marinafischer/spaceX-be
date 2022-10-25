@@ -1,5 +1,7 @@
 const express = require('express');
-const { getNextLaunch, getLatestLaunch, getUpcomingLaunches, getPastLaunches } = require('../controllers/launchesController');
+const {
+  getNextLaunch, getLatestLaunch, getUpcomingLaunches, getPastLaunches,
+} = require('../controllers/launchesController');
 
 const router = express.Router();
 
