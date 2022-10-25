@@ -1,7 +1,12 @@
 # SpaceX API
 
 Esta API foi criada com o intuíto de consumir a API SpaceX e retornar os dados mais relevantes.
-Para a construção da mesma, foi usado: JavaScript, Node.JS e Express.
+
+## Tecnologias
+
+  - JavaScript;
+  - Node.JS;
+  - Express;
 
 ## Para a execução do código, é necessário
   - node v16;
@@ -39,7 +44,7 @@ Quando a requisição é realizada com sucesso, retorna um JSON com o seguinte f
   }
   ```
 
-## Obter Dados da Última Decolagem
+### Obter Dados da Última Decolagem
 
 ```http
   GET /launches/latest
@@ -59,7 +64,7 @@ Quando a requisição é realizada com sucesso, retorna um JSON com o seguinte f
   }
   ```
 
-## Obter Dados das Próximas Decolagens
+### Obter Dados das Próximas Decolagens
 
 ```http
   GET /launches/upcoming
@@ -81,7 +86,7 @@ Quando a requisição é realizada com sucesso, retorna um JSON com o seguinte f
   ]
   ```
 
-## Obter Dados das Últimas Decolagens
+### Obter Dados das Últimas Decolagens
 
 ```http
   GET /launches/past
