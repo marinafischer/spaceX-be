@@ -11,9 +11,9 @@ Para a construção da mesma, foi usado: JavaScript, Node.JS e Express.
     ```git clone git@github.com:marinafischer/spaceX-be.git```
   - entre na pasta criada:
     ``cd spaceX-be``
-  - na raiz do projeto execute o comando 
+  - na raiz do projeto execute o comando:
     ```npm install```
-  - rode o comando
+  - rode o comando:
     ```npm start```
   - a aplicação será iniciada na porta 3001 da sua máquina (é muito importante que você não altere essa porta)
 
@@ -29,13 +29,15 @@ Para a construção da mesma, foi usado: JavaScript, Node.JS e Express.
 
 Quando a requisição é realizada com sucesso, retorna um JSON com o seguinte formato:
 
-{
-  id: id do lançamento,
-  name: nome do lançamento,
-  rocket: código do foguete,
-  date: data no formato UTC,
-  image: link para a imagem quando existir
-}
+  ```json
+  {
+    "id": "id do lançamento",
+    "name": "nome do lançamento",
+    "rocket": "código do foguete",
+    "date": "data no formato UTC",
+    "image": "link para a imagem quando existir"
+  }
+  ```
 
 ## Obter Dados da Última Decolagem
 
@@ -47,13 +49,15 @@ Quando a requisição é realizada com sucesso, retorna um JSON com o seguinte f
 
 Quando a requisição é realizada com sucesso, retorna um JSON com o seguinte formato:
 
-{
-  id: id do lançamento,
-  name: nome do lançamento,
-  rocket: código do foguete,
-  date: data no formato UTC,
-  image: link para a imagem quando existir
-}
+  ```json
+  {
+    "id": "id do lançamento",
+    "name": "nome do lançamento",
+    "rocket": "código do foguete",
+    "date": "data no formato UTC",
+    "image": "link para a imagem quando existir"
+  }
+  ```
 
 ## Obter Dados das Próximas Decolagens
 
@@ -65,16 +69,17 @@ Quando a requisição é realizada com sucesso, retorna um JSON com o seguinte f
 
 Quando a requisição é realizada com sucesso, retorna um JSON com o seguinte formato:
 
-[
-  {
-    id: id do lançamento,
-    name: nome do lançamento,
-    rocket: código do foguete,
-    date: data no formato UTC,
-    image: link para a imagem quando existir
-  }
-  ...
-]
+  ```json
+  [
+    {
+      "id": "id do lançamento",
+      "name": "nome do lançamento",
+      "rocket": "código do foguete",
+      "date": "data no formato UTC",
+      "image": "link para a imagem quando existir"
+    }
+  ]
+  ```
 
 ## Obter Dados das Últimas Decolagens
 
@@ -86,16 +91,17 @@ Quando a requisição é realizada com sucesso, retorna um JSON com o seguinte f
 
 Quando a requisição é realizada com sucesso, retorna um JSON com o seguinte formato:
 
-[
-  {
-    id: id do lançamento,
-    name: nome do lançamento,
-    rocket: código do foguete,
-    date: data no formato UTC,
-    image: link para a imagem quando existir
-  }
-  ...
-]
+  ```json
+  [
+    {
+      "id": "id do lançamento",
+      "name": "nome do lançamento",
+      "rocket": "código do foguete",
+      "date": "data no formato UTC",
+      "image": "link para a imagem quando existir"
+    }
+  ]
+  ```
 
 ## Alguma dúvida?
 
